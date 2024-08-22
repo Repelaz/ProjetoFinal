@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Jogos</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="../static/img/GameOn.png" alt="">
+        <h1>Lista de Jogos</h1>
+    </header>
+
+    <form method="POST">
+        <label for="nome">Nome do Jogo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="genero">Gênero do Jogo:</label>
+        <input type="text" id="genero" name="genero" required>
+
+        <button class="botao" type="submit">Adicionar Jogo</button>
+    </form>
+
+    <table class="tabela">
+        <tr>
+            <th>Jogo</th>
+            <th>Gênero</th>
+            <th>Ação</th>
+        </tr>
+
+        {% for jogo in jogos %}
+        <tr>
+            <td class="jogos">{{ jogo.nome }}</td>
+            <td class="jogos">{{ jogo.genero }}</td>
+
+            <td class="jogos">
+                <a href="{{ url_for('editar', index=loop.index0) }}">Editar</a>
+                <a href="{{ url_for('deletar', index=loop.index0) }}" >Deletar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

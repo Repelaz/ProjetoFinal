@@ -1,0 +1,129 @@
+:root {
+    --cor-roxo: #9b59b6; /* Roxo */
+    --cor-roxo-claro: #d8b9e5; /* Roxo claro */
+    --cor-roxo-escuro: #8e44ad; /* Roxo escuro */
+    --cor-preto: #333; /* Preto */
+    --cor-branco: #fff; /* Branco */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-roxo-claro);
+}
+
+header {
+    background-color: var(--cor-roxo-escuro);
+    padding: 5vh;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2vh 5vh var(--cor-roxo-escuro);
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 27%;
+}
+
+img {
+    border-radius: 50%;
+    height: 20vh;
+    justify-content: right;
+}
+
+h1 {
+    justify-content: center;
+    font-size: 7vh;
+    margin: 0;
+    letter-spacing: 1vh;
+    color: var(--cor-roxo-claro);
+}
+
+form {
+    display: flex;
+    padding: 0 10vh 5vh 10vh;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+form label {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--cor-roxo-escuro);
+}
+
+form input{
+    padding: 2.5vh;
+    margin-bottom: 5vh;
+    color: var(--cor-branco);
+    background-color: var(--cor-roxo-escuro);
+    border: 0.6vh solid var(--cor-preto);
+    border-radius: 2.5vh;
+    font-size: 3vh;
+}
+
+form .botao {
+    padding: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: var(--cor-preto);
+    color: var(--cor-roxo-escuro);
+    border: 0.8vh solid var(--cor-roxo-escuro);
+    border-radius: 4vh;
+    font-size: 5vh;
+    transition: background-color 0.5s;
+    font-weight: 800;
+}
+
+form .botao:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-roxo-escuro);
+    border: 0.8vh solid var(--cor-roxo-escuro);
+}
+
+table.tabela {
+    width: 100%;
+    margin-bottom: 3vh;
+    background-color: var(--cor-branco);
+}
+
+table.tabela th, table.tabela td {
+    padding: 4vh;
+    font-size: 3vh;
+    border-bottom: 0.6vh solid var(--cor-preto);
+}
+
+table.tabela th {
+    background-color: var(--cor-roxo-escuro);
+    font-weight: 700;
+    color: var(--cor-roxo-claro);
+    text-transform: uppercase;
+}
+
+
+.jogos {
+    background-color: var(--cor-roxo-claro);
+    color: var(--cor-roxo-escuro);
+    font-weight: 800;
+}
+
+table.tabela a {
+    color: var(--cor-roxo-escuro);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1vh 2vh;
+    border-radius: 0.9vh;
+    background-color: var(--cor-branco);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table.tabela a:hover {
+    color: var(--cor-roxo-claro);
+    background-color: var(--cor-preto);
+}
+
